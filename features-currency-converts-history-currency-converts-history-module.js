@@ -18,17 +18,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const routes = [
+var routes = [
     {
         path: '',
         component: _currency_converts_history_component__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryComponent"]
     },
     { path: '**', redirectTo: '' }
 ];
-class CurrencyConvertsHistoryRoutingModule {
-}
-CurrencyConvertsHistoryRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CurrencyConvertsHistoryRoutingModule });
-CurrencyConvertsHistoryRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function CurrencyConvertsHistoryRoutingModule_Factory(t) { return new (t || CurrencyConvertsHistoryRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+var CurrencyConvertsHistoryRoutingModule = /** @class */ (function () {
+    function CurrencyConvertsHistoryRoutingModule() {
+    }
+    CurrencyConvertsHistoryRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CurrencyConvertsHistoryRoutingModule });
+    CurrencyConvertsHistoryRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function CurrencyConvertsHistoryRoutingModule_Factory(t) { return new (t || CurrencyConvertsHistoryRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+    return CurrencyConvertsHistoryRoutingModule;
+}());
+
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](CurrencyConvertsHistoryRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CurrencyConvertsHistoryRoutingModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
@@ -58,22 +62,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class CurrencyConvertsHistoryComponent {
-    constructor(appService) {
+var CurrencyConvertsHistoryComponent = /** @class */ (function () {
+    function CurrencyConvertsHistoryComponent(appService) {
         this.appService = appService;
     }
-    ngOnInit() {
-        setTimeout(() => {
-            this.appService.pageTitle = 'Currency converts history';
+    CurrencyConvertsHistoryComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        setTimeout(function () {
+            _this.appService.pageTitle = 'Currency converts history';
         }, 0);
-    }
-}
-CurrencyConvertsHistoryComponent.ɵfac = function CurrencyConvertsHistoryComponent_Factory(t) { return new (t || CurrencyConvertsHistoryComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_core_app_service__WEBPACK_IMPORTED_MODULE_1__["AppService"])); };
-CurrencyConvertsHistoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CurrencyConvertsHistoryComponent, selectors: [["app-currency-converts-history"]], decls: 2, vars: 0, consts: [[1, "currency-converts-history-wrapper"]], template: function CurrencyConvertsHistoryComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-currency-converts-history-table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_views_currency_converts_history_table_currency_converts_history_table_component__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryTableComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2N1cnJlbmN5LWNvbnZlcnRzLWhpc3RvcnkvY3VycmVuY3ktY29udmVydHMtaGlzdG9yeS5jb21wb25lbnQuc2NzcyJ9 */"] });
+    };
+    CurrencyConvertsHistoryComponent.ɵfac = function CurrencyConvertsHistoryComponent_Factory(t) { return new (t || CurrencyConvertsHistoryComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_core_app_service__WEBPACK_IMPORTED_MODULE_1__["AppService"])); };
+    CurrencyConvertsHistoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CurrencyConvertsHistoryComponent, selectors: [["app-currency-converts-history"]], decls: 2, vars: 0, consts: [[1, "currency-converts-history-wrapper"]], template: function CurrencyConvertsHistoryComponent_Template(rf, ctx) { if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-currency-converts-history-table");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        } }, directives: [_views_currency_converts_history_table_currency_converts_history_table_component__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryTableComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2N1cnJlbmN5LWNvbnZlcnRzLWhpc3RvcnkvY3VycmVuY3ktY29udmVydHMtaGlzdG9yeS5jb21wb25lbnQuc2NzcyJ9 */"] });
+    return CurrencyConvertsHistoryComponent;
+}());
+
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CurrencyConvertsHistoryComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -109,14 +116,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class CurrencyConvertsHistoryModule {
-}
-CurrencyConvertsHistoryModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CurrencyConvertsHistoryModule });
-CurrencyConvertsHistoryModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function CurrencyConvertsHistoryModule_Factory(t) { return new (t || CurrencyConvertsHistoryModule)(); }, imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-            _currency_converts_history_routing_module__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryRoutingModule"],
-            _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__["SharedModule"]
-        ]] });
+var CurrencyConvertsHistoryModule = /** @class */ (function () {
+    function CurrencyConvertsHistoryModule() {
+    }
+    CurrencyConvertsHistoryModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CurrencyConvertsHistoryModule });
+    CurrencyConvertsHistoryModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function CurrencyConvertsHistoryModule_Factory(t) { return new (t || CurrencyConvertsHistoryModule)(); }, imports: [[
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _currency_converts_history_routing_module__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryRoutingModule"],
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__["SharedModule"]
+            ]] });
+    return CurrencyConvertsHistoryModule;
+}());
+
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](CurrencyConvertsHistoryModule, { declarations: [_currency_converts_history_component__WEBPACK_IMPORTED_MODULE_3__["CurrencyConvertsHistoryComponent"], _views_currency_converts_history_table_currency_converts_history_table_component__WEBPACK_IMPORTED_MODULE_4__["CurrencyConvertsHistoryTableComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
         _currency_converts_history_routing_module__WEBPACK_IMPORTED_MODULE_2__["CurrencyConvertsHistoryRoutingModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__["SharedModule"]] }); })();
@@ -184,8 +195,8 @@ function CurrencyConvertsHistoryTableComponent_ng_template_14_tr_0_Template(rf, 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const convert_r4 = ctx.$implicit;
-    const i_r5 = ctx.index;
+    var convert_r4 = ctx.$implicit;
+    var i_r5 = ctx.index;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](i_r5 + 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -198,53 +209,56 @@ function CurrencyConvertsHistoryTableComponent_ng_template_14_tr_0_Template(rf, 
 function CurrencyConvertsHistoryTableComponent_ng_template_14_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, CurrencyConvertsHistoryTableComponent_ng_template_14_tr_0_Template, 16, 13, "tr", 7);
 } if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    var ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r2.currencyConverts);
 } }
-class CurrencyConvertsHistoryTableComponent {
-    constructor() { }
-    ngOnInit() {
-        this.currencyConverts = this.fetchCurrencyConvertsHistory();
+var CurrencyConvertsHistoryTableComponent = /** @class */ (function () {
+    function CurrencyConvertsHistoryTableComponent() {
     }
-    fetchCurrencyConvertsHistory() {
-        const currencyConvertsHistory = localStorage.getItem('currencyConvertsHistory');
+    CurrencyConvertsHistoryTableComponent.prototype.ngOnInit = function () {
+        this.currencyConverts = this.fetchCurrencyConvertsHistory();
+    };
+    CurrencyConvertsHistoryTableComponent.prototype.fetchCurrencyConvertsHistory = function () {
+        var currencyConvertsHistory = localStorage.getItem('currencyConvertsHistory');
         if (currencyConvertsHistory) {
             return JSON.parse(currencyConvertsHistory);
         }
         return [];
-    }
-}
-CurrencyConvertsHistoryTableComponent.ɵfac = function CurrencyConvertsHistoryTableComponent_Factory(t) { return new (t || CurrencyConvertsHistoryTableComponent)(); };
-CurrencyConvertsHistoryTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CurrencyConvertsHistoryTableComponent, selectors: [["app-currency-converts-history-table"]], decls: 16, vars: 2, consts: [[1, "currency-converts-history-table-wrapper", "table-responsive"], [1, "table", "table-hover"], [1, "table-primary"], ["scope", "col"], [4, "ngIf", "ngIfElse"], ["currencyConvertsTableTemplate", ""], ["colspan", "3"], [4, "ngFor", "ngForOf"]], template: function CurrencyConvertsHistoryTableComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "table", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "tr", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "th", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "#");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "th", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Time");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "th", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "From");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "th", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "To");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, CurrencyConvertsHistoryTableComponent_tr_13_Template, 3, 0, "tr", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, CurrencyConvertsHistoryTableComponent_ng_template_14_Template, 1, 1, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.currencyConverts && (ctx.currencyConverts == null ? null : ctx.currencyConverts.length) === 0)("ngIfElse", _r1);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CurrencyPipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2N1cnJlbmN5LWNvbnZlcnRzLWhpc3Rvcnkvdmlld3MvY3VycmVuY3ktY29udmVydHMtaGlzdG9yeS10YWJsZS9jdXJyZW5jeS1jb252ZXJ0cy1oaXN0b3J5LXRhYmxlLmNvbXBvbmVudC5zY3NzIn0= */"] });
+    };
+    CurrencyConvertsHistoryTableComponent.ɵfac = function CurrencyConvertsHistoryTableComponent_Factory(t) { return new (t || CurrencyConvertsHistoryTableComponent)(); };
+    CurrencyConvertsHistoryTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CurrencyConvertsHistoryTableComponent, selectors: [["app-currency-converts-history-table"]], decls: 16, vars: 2, consts: [[1, "currency-converts-history-table-wrapper", "table-responsive"], [1, "table", "table-hover"], [1, "table-primary"], ["scope", "col"], [4, "ngIf", "ngIfElse"], ["currencyConvertsTableTemplate", ""], ["colspan", "3"], [4, "ngFor", "ngForOf"]], template: function CurrencyConvertsHistoryTableComponent_Template(rf, ctx) { if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "table", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "thead");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "tr", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "th", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "#");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "th", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Time");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "th", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "From");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "th", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "To");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "tbody");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, CurrencyConvertsHistoryTableComponent_tr_13_Template, 3, 0, "tr", 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, CurrencyConvertsHistoryTableComponent_ng_template_14_Template, 1, 1, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        } if (rf & 2) {
+            var _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](15);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.currencyConverts && (ctx.currencyConverts == null ? null : ctx.currencyConverts.length) === 0)("ngIfElse", _r1);
+        } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CurrencyPipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2N1cnJlbmN5LWNvbnZlcnRzLWhpc3Rvcnkvdmlld3MvY3VycmVuY3ktY29udmVydHMtaGlzdG9yeS10YWJsZS9jdXJyZW5jeS1jb252ZXJ0cy1oaXN0b3J5LXRhYmxlLmNvbXBvbmVudC5zY3NzIn0= */"] });
+    return CurrencyConvertsHistoryTableComponent;
+}());
+
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CurrencyConvertsHistoryTableComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
